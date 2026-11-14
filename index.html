@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Bro!</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #090018, #210b38, #10152f);
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 35px 20px;
+  max-width: 650px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 38px;
+  color: #ff62c7;
+  text-shadow: 0 0 15px #ff00a6;
+  margin: 25px 0 10px;
+}
+
+h2 {
+  color: #ffd166;
+  margin: 20px 0;
+}
+
+p {
+  line-height: 1.8;
+  color: #eee;
+  font-size: 16px;
+}
+
+.photo {
+  width: 85%;
+  max-width: 380px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 3px solid #ff62c7;
+  box-shadow: 0 0 25px #ff00a6;
+  margin: 25px auto;
+}
+
+.message {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid #ff62c7;
+  border-radius: 20px;
+  padding: 25px;
+  margin: 20px 0;
+}
+
+button {
+  background: linear-gradient(45deg, #ff008c, #8a2be2);
+  border: none;
+  color: white;
+  padding: 14px 25px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 20px 0;
+  box-shadow: 0 0 15px #ff00a6;
+}
+
+button:hover {
+  transform: scale(1.08);
+}
+
+#surprise {
+  display: none;
+  margin-top: 20px;
+  color: #ffd166;
+  font-size: 19px;
+  animation: muncul 1s;
+}
+
+@keyframes muncul {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+.emoji {
+  font-size: 35px;
+  margin: 15px;
+}
+
+footer {
+  margin-top: 35px;
+  padding: 20px;
+  color: #aaa;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="emoji">🎂 🎉 🎈</div>
+
+  <h1>HAPPY BIRTHDAY!</h1>
+
+  <h2>SELAMAT ULANG TAHUN, BRO! 🥳</h2>
+
+  <p>
+    Hari ini hari spesial buat manusia paling random,
+    paling absurd, dan paling susah dibilangin!
+  </p>
+
+  <!-- SATU GAMBAR ULANG TAHUN -->
+  <img
+    class="photo"
+    src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800"
+    alt="Dekorasi pesta ulang tahun">
+
+  <div class="message">
+    <h2>🎁 Pesan Buat Lo</h2>
+
+    <p>
+      Selamat bertambah umur, manusia batu! 😂
+      Semoga panjang umur, sehat selalu,
+      makin sukses, rezeki lancar,
+      dan semua impian lo tercapai.
+      <br><br>
+
+      Jangan terlalu banyak tingkah,
+      jangan sok cool,
+      dan jangan lupa traktiran!
+      <br><br>
+
+      Semoga tahun ini lebih banyak bahagia
+      daripada drama kehidupan.
+      <br><br>
+
+      Pokoknya tetap jadi manusia random
+      yang selalu bikin suasana rame.
+    </p>
+  </div>
+
+  <button onclick="kejutan()">
+    KLIK UNTUK KEJUTAN 🎁
+  </button>
+
+  <div id="surprise">
+    🎉 SURPRISE!!! 🎉
+    <br><br>
+    Selamat ulang tahun, bro!
+    <br>
+    Jangan lupa traktirannya.
+    Kalau lupa, persahabatan kita
+    perlu dipertimbangkan lagi. 🤣
+    <br><br>
+    LOVE YOU BRO! 🔥
+  </div>
+
+  <footer>
+    Made with ❤️ for my crazy friend.
+    <br>
+    © 2026 Birthday Celebration
+  </footer>
+
+</div>
+
+<script>
+function kejutan() {
+  document.getElementById("surprise").style.display = "block";
+}
+</script>
+
+</body>
+</html>
